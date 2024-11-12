@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DYNAMIC RESUME GENERATOR</h1>
+    
+    <form id="dynamic-cv">
+        <fieldset>
+            <legend><h2> Personal Info</h2></legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div>
+                <label for="FatherName:">Father Name:</label>
+                <input type="text" id="FatherName" required>
+            </div>
+
+            <div>
+                <label for="SurName:">Sur Name:</label>
+                <input type="text" id="SurName" required>
+            </div>
+            <div>
+                <label for="Birthdate">DOB:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+
+
+            <div>
+                <label for="Phoneno">Phone no:</label>
+                <input type="tel" id="Phoneno" required>
+            </div>
+
+            <div>
+                <label for="Email">E-mail:</label>
+                <input type="email" id="Email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Qualification:</h2></legend>
+            <div>
+                <label for="Qualification:"> </label>
+                <textarea id="Qualification" rows="10" col="10" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Work Experience:</h2></legend>
+            <div>
+                <label for="Experience:"> </label>
+                <textarea id="Experience" rows="10" col="10" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>SKILLS:</h2></legend>
+            <div>
+                <label for="Skills:"> </label>
+                <textarea id="Skills" rows="10" col="10"required></textarea>
+            </div>
+        </fieldset>
+
+       <button type="submit">Generate Resume</button>
+   
+    </form>
+    <br>
+<div id="resume-output" class ="resume-output"></div>
+<script src="main.js"></script>
+</body>
+</html>
